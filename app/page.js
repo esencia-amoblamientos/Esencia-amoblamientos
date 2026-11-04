@@ -14,7 +14,7 @@ const categorias = [
 ];
 
 export default function Home() {
-  const whatsapp = "https://wa.me/5493516758271";
+const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0%9F%8F%BB.%20Quiero%20solicitar%20un%20presupuesto%20para%20un%20mueble%20a%20medida.";
 
   return (
     <main>
