@@ -98,6 +98,12 @@ export default function Home() {
       <footer id="contacto">
         <h2>ESENCIA AMOBLAMIENTOS</h2>
         <p>Diseñamos espacios que reflejan tu esencia.</p>
+            <div className="horarios">
+  <h3>HORARIOS DE ATENCIÓN</h3>
+  <p><strong>Lunes a viernes:</strong> 08:00 a 17:00 hs</p>
+  <p><strong>Sábados:</strong> 09:00 a 13:00 hs</p>
+  <p><strong>Domingos:</strong> Cerrado</p>
+</div>
         <p>WhatsApp: +54 9 351 6758271</p>
         <a href={whatsapp}>Contactanos</a>
         <p>Instagram: @esencia_amoblamientos1</p>
@@ -225,7 +231,33 @@ export default function Home() {
           nav { justify-content: center; }
           .hero { min-height: 500px; }
         }
-      `}</style>
+     .horarios {
+  margin: 35px auto;
+  padding: 28px 24px;
+  max-width: 520px;
+  background: linear-gradient(145deg, #171717, #080808);
+  border: 1px solid #888;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  color: #eee;
+}
+
+.horarios h3 {
+  color: #c0c0c0;
+  letter-spacing: 3px;
+  font-size: 17px;
+  margin-bottom: 22px;
+}
+
+.horarios p {
+  margin: 13px 0;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.horarios strong {
+  color: #fff;
+} `}</style>
     </main>
   );
 }
