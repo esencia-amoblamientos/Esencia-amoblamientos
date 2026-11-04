@@ -76,13 +76,19 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
       </section>
 
       <section id="trabajos" className="seccion trabajos">
-        <p className="detalle">HECHOS PARA VOS</p>
-        <h2>Nuestros trabajos</h2>
-        <p>
-          Cada proyecto es una oportunidad para crear
-          algo único.
-        </p>
-      </section>
+  <p className="detalle">ESENCIA AMOBLAMIENTOS</p>
+  <h2>Nuestros trabajos</h2>
+  <p>Diseños exclusivos, fabricados a medida para transformar cada espacio.</p>
+
+  <div className="galeria">
+    <img src="/despensero.jpg" alt="Despensero blanco" />
+    <img src="/placard.jpg" alt="Placard de diseño" />
+    <img src="/placard-interior.jpg" alt="Interior de placard" />
+    <img src="/vanitory.jpg" alt="Vanitory moderno" />
+    <img src="/cocina-negra.jpg" alt="Mueble de cocina negro" />
+    <img src="/bajo-mesada.jpg" alt="Bajo mesada a medida" />
+  </div>
+</section>
 
       <section className="personalizados">
         <h2>¿Tenés una idea?</h2>
