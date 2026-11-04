@@ -161,10 +161,14 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
         }
         .heroContenido { max-width: 600px; }
         .hero h1 {
-          font-size: clamp(38px, 6vw, 65px);
-          line-height: 1.12;
-          margin: 20px 0;
-        }
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 6vw, 65px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 1px;
+  color: #f1f1f1;
+  margin: 25px 0;
+}
         .hero p { color: #ccc; line-height: 1.8; }
         .detalle {
           color: #aaa;
