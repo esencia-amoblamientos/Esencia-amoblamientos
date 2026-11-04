@@ -176,15 +176,17 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
           font-size: 12px;
         }
         .boton {
-          display: inline-block;
-          margin-top: 22px;
-          padding: 15px 24px;
-          background: #b7b7b7;
-          color: #111;
-          text-decoration: none;
-          font-weight: bold;
-          letter-spacing: 1px;
-        }
+  display: inline-block;
+  margin-top: 28px;
+  padding: 17px 30px;
+  background: linear-gradient(135deg, #eeeeee, #a8a8a8, #f5f5f5);
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: 1px solid #d5d5d5;
+  transition: all 0.3s ease;
+}
         .seccion {
           padding: 85px 8%;
           text-align: center;
