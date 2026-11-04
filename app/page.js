@@ -156,7 +156,7 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
           padding: 70px 9%;
           background:
             linear-gradient(90deg, #080808 5%, #080808bb 65%, #08080855),
-            url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0")
+            url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85")
             center/cover;
         }
         .heroContenido { max-width: 600px; }
