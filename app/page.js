@@ -21,7 +21,7 @@ export default function Home() {
       <header>
         <a className="marca" href="#">
   <img
-    src="/logo_esencia_transparente.png"
+    src="./logo_esencia_transparente.png"
     alt="Esencia Amoblamientos"
     style={{ height: "55px", width: "auto", objectFit: "contain" }}
   />
