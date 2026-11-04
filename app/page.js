@@ -221,7 +221,9 @@ export default function Home() {
           right: 20px;
           bottom: 20px;
           padding: 15px 20px;
-          background: #777;
+          background: #25D366;
+color: white;
+box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
           color: white;
           text-decoration: none;
           border-radius: 30px;
