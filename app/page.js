@@ -19,8 +19,14 @@ export default function Home() {
     <main>
       <header>
         <a className="marca" href="#">
-          ESENCIA AMOBLAMIENTOS
-        </a>
+  <img
+    src="/logo_esencia_transparente.png"
+    alt="Esencia Amoblamientos"
+    style={{ height: "55px", width: "auto", objectFit: "contain" }}
+  />
+</a>
+          
+        
         <nav>
           <a href="#">Inicio</a>
           <a href="#categorias">Categorías</a>
