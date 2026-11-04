@@ -1,3 +1,4 @@
+'use client';
 const categorias = [
   "Racks y muebles para TV",
   "Mesas y comedores",
