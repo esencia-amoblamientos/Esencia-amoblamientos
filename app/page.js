@@ -275,7 +275,31 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
 }
 
 .horarios strong {
-  color: #fff;
+  color: #fff;}
+  
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.galeria img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #777;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.45);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.03);
+}
+
 } `}</style>
     </main>
   );
