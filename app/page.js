@@ -81,12 +81,15 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
   <p>Diseños exclusivos, fabricados a medida para transformar cada espacio.</p>
 
   <div className="galeria">
-    <img src="/despensero.jpg" alt="Despensero blanco" />
-    <img src="/placard.jpg" alt="Placard de diseño" />
-    <img src="/placard-interior.jpg" alt="Interior de placard" />
-    <img src="/vanitory.jpg" alt="Vanitory moderno" />
-    <img src="/cocina-negra.jpg" alt="Mueble de cocina negro" />
-    <img src="/bajo-mesada.jpg" alt="Bajo mesada a medida" />
+  
+<img src="/despensero.jpg" alt="Despensero blanco" />
+<img src="/placard-blanco.jpg" alt="Placard blanco" />
+<img src="/placard-interior.jpg" alt="Interior de placard" />
+<img src="/placard-interior-blanco.jpg" alt="Placard interior blanco" />
+<img src="/vanitory.jpg" alt="Vanitory a medida" />
+<img src="/bajo-mesada-negro.jpg" alt="Bajo mesada negro" />
+<img src="/bajo-mesada-sahara.jpg" alt="Bajo mesada Sahara" />
+
   </div>
 </section>
 
