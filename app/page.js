@@ -82,13 +82,15 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
 
   <div className="galeria">
   
-<img src="/despensero.jpg" alt="Despensero blanco" />
-<img src="/placard-blanco.jpg" alt="Placard blanco" />
-<img src="/placard-interior.jpg" alt="Interior de placard" />
-<img src="/placard-interior-blanco.jpg" alt="Placard interior blanco" />
-<img src="/vanitory.jpg" alt="Vanitory a medida" />
-<img src="/bajo-mesada-negro.jpg" alt="Bajo mesada negro" />
-<img src="/bajo-mesada-sahara.jpg" alt="Bajo mesada Sahara" />
+
+<img src="/Esencia-amoblamientos/despensero.jpg" alt="Despensero blanco" />
+<img src="/Esencia-amoblamientos/placard-blanco.jpg" alt="Placard blanco" />
+<img src="/Esencia-amoblamientos/placard-interior.jpg" alt="Interior de placard" />
+<img src="/Esencia-amoblamientos/placard-interior-blanco.jpg" alt="Placard interior blanco" />
+<img src="/Esencia-amoblamientos/vanitory.jpg" alt="Vanitory a medida" />
+<img src="/Esencia-amoblamientos/bajo-mesada-negro.jpg" alt="Bajo mesada negro" />
+<img src="/Esencia-amoblamientos/bajo-mesada-sahara.jpg" alt="Bajo mesada Sahara" />
+
 
   </div>
 </section>
