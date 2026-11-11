@@ -781,7 +781,18 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
   </div>
 )}
   {formularioCompraAbierto && (
-  <section className="formulario-compra">
+  <section
+  className="formulario-compra"
+  style={{
+    position: "fixed",
+    inset: 0,
+    zIndex: 9999,
+    background: "#111111",
+    color: "#ffffff",
+    padding: "40px 20px",
+    overflowY: "auto",
+  }}
+>
     <h2>Finalizar compra</h2>
     <p>Completá tus datos para continuar con tu pedido.</p>
 
