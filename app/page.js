@@ -603,7 +603,26 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
 .galeria img:hover {
   transform: scale(1.03);
 }
+.carrito-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 340px;
+  max-width: calc(100vw - 40px);
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 24px;
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
 
+.carrito-panel button {
+  cursor: pointer;
+}
 } `}</style>
             {imagenSeleccionada && (
   <div
