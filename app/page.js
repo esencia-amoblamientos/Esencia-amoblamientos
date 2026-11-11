@@ -131,6 +131,29 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
           </a>
         </div>
       </section>
+              
+<section id="nosotros" className="section">
+  <p className="detalle">SOBRE ESENCIA</p>
+  <h2>Diseñamos espacios que reflejan tu esencia.</h2>
+
+  <p>
+    En Esencia Amoblamientos creemos que cada hogar tiene una identidad propia.
+    Por eso fabricamos muebles a medida, cuidando cada detalle y combinando diseño, funcionalidad y calidad.
+  </p>
+
+  <p>
+    Nuestro objetivo es transformar tus ideas en muebles únicos, adaptados a tus espacios, gustos y posibilidades.
+  </p>
+
+  <p>
+    Contamos con personal capacitado y con más de 10 años de experiencia en el rubro, trabajando con dedicación y compromiso para ofrecer soluciones que se adapten a cada necesidad.
+  </p>
+
+  <p>
+    Cada proyecto comienza con una idea. Nosotros la hacemos realidad.
+  </p>
+</section>
+
 
       <section id="categorias" className="seccion">
         <p className="detalle">NUESTRAS PROPUESTAS</p>
