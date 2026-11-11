@@ -20,6 +20,7 @@ const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
 const [carrito, setCarrito] = useState([]);
 const [cantidad, setCantidad] = useState(1);
 const [carritoAbierto, setCarritoAbierto] = useState(false);
+  const [pantallaPagoAbierta, setPantallaPagoAbierta] = useState(false);
   const [formularioCompraAbierto, setFormularioCompraAbierto] = useState(false);
 const [datosCliente, setDatosCliente] = useState({
   nombre: "",
@@ -28,6 +29,8 @@ const [datosCliente, setDatosCliente] = useState({
   email: "",
   entrega: "",
 });
+
+const [medioPago, setMedioPago] = useState("");
     
 const productoPlacard = {
   id: "placard-blanco",
@@ -805,8 +808,9 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
     width: "100%",
   }}
   onSubmit={(e) => {
-      e.preventDefault();
-      alert("Tus datos fueron completados. Próximamente continuaremos con el pago mediante Getnet.");
+     e.preventDefault();
+setFormularioCompraAbierto(false);
+setPantallaPagoAbierta(true);
     }}>
       <label>Nombre y apellido *</label>
       <input
