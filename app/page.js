@@ -815,6 +815,15 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
         value={datosCliente.nombre}
         onChange={(e) => setDatosCliente({...datosCliente, nombre: e.target.value})}
         placeholder="Nombre completo"
+          style={{
+  background: "#252525",
+  color: "#ffffff",
+  border: "1px solid #999999",
+  borderRadius: "6px",
+  padding: "12px",
+  width: "100%",
+  boxSizing: "border-box",
+}}
       />
 
       <label>DNI *</label>
@@ -824,6 +833,15 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
         value={datosCliente.dni}
         onChange={(e) => setDatosCliente({...datosCliente, dni: e.target.value})}
         placeholder="Número de DNI"
+          style={{
+  background: "#252525",
+  color: "#ffffff",
+  border: "1px solid #999999",
+  borderRadius: "6px",
+  padding: "12px",
+  width: "100%",
+  boxSizing: "border-box",
+}}
       />
 
       <label>Teléfono *</label>
@@ -833,6 +851,15 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
         value={datosCliente.telefono}
         onChange={(e) => setDatosCliente({...datosCliente, telefono: e.target.value})}
         placeholder="Tu teléfono"
+          style={{
+  background: "#252525",
+  color: "#ffffff",
+  border: "1px solid #999999",
+  borderRadius: "6px",
+  padding: "12px",
+  width: "100%",
+  boxSizing: "border-box",
+}}
       />
 
       <label>Correo electrónico *</label>
@@ -842,6 +869,15 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
         value={datosCliente.email}
         onChange={(e) => setDatosCliente({...datosCliente, email: e.target.value})}
         placeholder="Tu correo electrónico"
+          style={{
+  background: "#252525",
+  color: "#ffffff",
+  border: "1px solid #999999",
+  borderRadius: "6px",
+  padding: "12px",
+  width: "100%",
+  boxSizing: "border-box",
+}}
       />
 
       <h3>¿Cómo querés recibir tu compra?</h3>
