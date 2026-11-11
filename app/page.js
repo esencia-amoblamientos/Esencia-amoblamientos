@@ -925,6 +925,32 @@ setPantallaPagoAbierta(true);
     </form>
   </section>
 )}
+  {pantallaPagoAbierta && (
+  <section
+    style={{
+      background: "#111111",
+      color: "#ffffff",
+      padding: "40px 20px",
+      textAlign: "center",
+      minHeight: "300px",
+    }}
+  >
+    <h2>Elegí cómo pagar</h2>
+    <p>Tu pedido está listo para continuar.</p>
+    <p>Próximamente podrás realizar tu pago de forma segura mediante Getnet.</p>
+
+    <button
+      type="button"
+      className="boton"
+      onClick={() => {
+        setPantallaPagoAbierta(false);
+        setFormularioCompraAbierto(true);
+      }}
+    >
+      VOLVER AL FORMULARIO
+    </button>
+  </section>
+)}
   </main>
   );
 }
