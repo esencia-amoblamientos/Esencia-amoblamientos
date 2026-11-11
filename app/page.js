@@ -392,58 +392,75 @@ footer a {
         }
         .tienda { background: #191919; }
         
+
 .productos {
   display: flex;
   justify-content: center;
-  margin: 40px auto;
-  max-width: 650px;
+  margin: 45px auto;
+  max-width: 680px;
+  padding: 0 15px;
 }
 
 .producto {
   width: 100%;
   overflow: hidden;
-  background: #242424;
-  border: 1px solid #777;
-  border-radius: 14px;
-  box-shadow: 0 12px 30px #0008;
+  background: linear-gradient(145deg, #292929, #171717);
+  border: 1px solid #888;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px #0009;
 }
 
 .producto img {
   width: 100%;
-  height: 420px;
+  height: 480px;
   object-fit: cover;
   display: block;
 }
 
 .producto-info {
-  padding: 28px;
+  padding: 32px;
   text-align: left;
 }
 
 .producto-info h3 {
-  color: #ddd;
-  font-size: 26px;
+  color: #e5e5e5;
+  font-size: 30px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .producto-precio {
   color: #e5e5e5 !important;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: bold;
+  margin: 20px 0 !important;
+  border-bottom: 1px solid #777;
+  padding-bottom: 18px;
 }
 
 .producto-info p {
-  margin: 10px 0;
+  margin: 14px 0;
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.6;
 }
 
 .stock {
-  color: #c8c8c8;
+  color: #fff !important;
   font-weight: bold;
-  margin-top: 20px !important;
+  margin-top: 25px !important;
+  padding: 14px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .producto-info .boton {
-  margin-top: 20px;
+  margin-top: 22px;
+  width: 100%;
+  padding: 16px;
+  font-size: 15px;
 }
 
         .tienda p, .trabajos p, .personalizados p {
