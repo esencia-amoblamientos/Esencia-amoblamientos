@@ -30,25 +30,26 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
   return (
     <main>
       <header>
-        <a className="marca" href="#">
-  <img
-    src="./logo_esencia_transparente.png"
-    alt="Esencia Amoblamientos"
-    style={{ height: "55px", width: "auto", objectFit: "contain" }}
-  />
-</a>
-          
-        
-        <nav>
-          <a href="#">Inicio</a>
-          <a href="#categorias">Categorías</a>
-          <a href="#tienda">Tienda</a>
-          <a href="#trabajos">Nuestros trabajos</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
-      </header>
+    
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#categorias">Productos</a>
+    <a href="#tienda">Tienda</a>
+    <a href="#trabajos">Nuestros trabajos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+       
 
       <section className="hero">
+    <div className="heroLogo">
+  <img
+    src="/logo_esencia_transparente.png"
+    alt="Esencia Amoblamientos"
+  />
+</div>
         <div className="heroContenido">
           <p>DISEÑO · CALIDAD · EXCLUSIVIDAD</p>
           <h1>Diseñamos espacios que reflejan tu esencia.</h1>
@@ -200,11 +201,85 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
           letter-spacing: 3px;
           text-decoration: none;
         }
-        nav { display: flex; gap: 20px; flex-wrap: wrap; }
-        nav a, footer a {
-          color: #bbb;
-          text-decoration: none;
-        }
+       
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+nav a {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: linear-gradient(
+    120deg,
+    #ffffff,
+    #aeb4bb,
+    #ffffff,
+    #858b92,
+    #f5f5f5
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  filter: brightness(1.4);
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+nav a {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: linear-gradient(
+    120deg,
+    #ffffff,
+    #aeb4bb,
+    #ffffff,
+    #858b92,
+    #f5f5f5
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  filter: brightness(1.4);
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+
         .hero {
           min-height: 570px;
           display: flex;
