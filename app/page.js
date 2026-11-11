@@ -41,7 +41,7 @@ const agregarAlCarrito = () => {
       : 0;
 
     if (unidadesActuales + cantidad > productoPlacard.stock) {
-      console.log("SE EJECUTÓ AGREGAR AL CARRITO");
+      
       alert("No hay suficientes unidades disponibles.");
       return actual;
     }
