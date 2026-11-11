@@ -75,17 +75,58 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
         </div>
       </section>
 
-      <section id="tienda" className="seccion tienda">
-        <p className="detalle">ESENCIA AMOBLAMIENTOS</p>
-        <h2>Elegí tu próximo mueble</h2>
-        <p>
-          Descubrí nuestros productos disponibles y
-          consultanos por diseños personalizados.
+
+<section id="tienda" className="seccion tienda">
+  <p className="detalle">ESENCIA AMOBLAMIENTOS</p>
+  <h2>Nuestros productos</h2>
+  <p>
+    Descubrí nuestros muebles disponibles en stock
+    y elegí el que mejor se adapte a tu espacio.
+  </p>
+
+  <div className="productos">
+    <article className="producto">
+      <img
+        src="/Esencia-amoblamientos/placard-blanco.jpg"
+        alt="Placard blanco de tres puertas"
+      />
+
+      <div className="producto-info">
+        <h3>Placard blanco</h3>
+
+        <p className="producto-precio">$350.000</p>
+
+        <p><strong>Material:</strong> MDF de 18 mm</p>
+        <p><strong>Alto:</strong> 1,80 m</p>
+        <p><strong>Ancho:</strong> 1 m</p>
+        <p><strong>Profundidad:</strong> 47 cm</p>
+        <p><strong>Color:</strong> Blanco</p>
+
+        <p className="stock">
+          3 unidades disponibles
         </p>
-        <a className="boton" href={whatsapp} target="_blank">
-          CONSULTAR POR WHATSAPP
-        </a>
-      </section>
+
+        <button
+          className="boton"
+          type="button"
+          disabled
+        >
+          COMPRAR ONLINE
+        </button>
+      </div>
+    </article>
+  </div>
+
+  <a
+    className="boton"
+    href={whatsapp}
+    target="_blank"
+    rel="noreferrer"
+  >
+    CONSULTAR POR WHATSAPP
+  </a>
+</section>
+
 
       <section id="trabajos" className="seccion trabajos">
   <p className="detalle">ESENCIA AMOBLAMIENTOS</p>
