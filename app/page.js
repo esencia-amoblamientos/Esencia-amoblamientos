@@ -29,7 +29,7 @@ const productoPlacard = {
   stock: 3,
 };
 
-const agregarAlCarrito = () => 
+const agregarAlCarrito = () => {
   console.log("BOTÓN COMPRAR ONLINE FUNCIONA");
   setCarrito((actual) => {
     const existente = actual.find(
