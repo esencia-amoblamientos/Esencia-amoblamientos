@@ -279,7 +279,17 @@ footer a {
   color: #bbb;
   text-decoration: none;
 }
+.heroLogo {
+  width: 38%;
+  max-width: 380px;
+  flex-shrink: 0;
+}
 
+.heroLogo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
         .hero {
           min-height: 570px;
           display: flex;
