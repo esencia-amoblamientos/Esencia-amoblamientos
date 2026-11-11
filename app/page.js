@@ -1,4 +1,5 @@
-'use client';
+'use client'; 
+import { useState } from "react";
 const categorias = [
   "Racks y muebles para TV",
   "Mesas y comedores",
@@ -14,6 +15,16 @@ const categorias = [
 ];
 
 export default function Home() {
+const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
+  const imagenesGaleria = [
+  "/Esencia-amoblamientos/despensero.jpg",
+  "/Esencia-amoblamientos/placard-blanco.jpg",
+  "/Esencia-amoblamientos/placard-interior.jpg",
+  "/Esencia-amoblamientos/placard-interior-blanco.jpg",
+  "/Esencia-amoblamientos/vanitory.jpg",
+  "/Esencia-amoblamientos/bajo-mesada-negro.jpg",
+  "/Esencia-amoblamientos/bajo-mesada-sahara.jpg"
+];
 const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0%9F%8F%BB.%20Quiero%20solicitar%20un%20presupuesto%20para%20un%20mueble%20a%20medida.";
 
   return (
@@ -83,13 +94,47 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
   <div className="galeria">
   
 
-<img src="/Esencia-amoblamientos/despensero.jpg" alt="Despensero blanco" />
-<img src="/Esencia-amoblamientos/placard-blanco.jpg" alt="Placard blanco" />
-<img src="/Esencia-amoblamientos/placard-interior.jpg" alt="Interior de placard" />
-<img src="/Esencia-amoblamientos/placard-interior-blanco.jpg" alt="Placard interior blanco" />
-<img src="/Esencia-amoblamientos/vanitory.jpg" alt="Vanitory a medida" />
-<img src="/Esencia-amoblamientos/bajo-mesada-negro.jpg" alt="Bajo mesada negro" />
-<img src="/Esencia-amoblamientos/bajo-mesada-sahara.jpg" alt="Bajo mesada Sahara" />
+<img
+  src="/Esencia-amoblamientos/despensero.jpg"
+  alt="Despensero blanco"
+  onClick={() => setImagenSeleccionada("/Esencia-amoblamientos/despensero.jpg")}
+  style={{ cursor: "zoom-in" }}
+/>
+<img
+  src="/Esencia-amoblamientos/placard-blanco.jpg"
+  alt="Placard blanco"
+  onClick={() => setImagenSeleccionada("/Esencia-amoblamientos/placard-blanco.jpg")}
+  style={{ cursor: "zoom-in" }}
+/><img
+  src="/Esencia-amoblamientos/placard-interior.jpg"
+  alt="Interior de placard"
+  onClick={() => setImagenSeleccionada("/Esencia-amoblamientos/placard-interior.jpg")}
+  style={{ cursor: "zoom-in" }}
+/>
+<img
+  src="/Esencia-amoblamientos/placard-interior-blanco.jpg"
+  alt="Placard interior blanco"
+  onClick={() => setImagenSeleccionada("/Esencia-amoblamientos/placard-interior-blanco.jpg")}
+  style={{ cursor: "zoom-in" }}
+/>
+<img
+  src="/Esencia-amoblamientos/vanitory.jpg"
+  alt="Vanitory a medida"
+  onClick={() => setImagenSeleccionada("/Esencia-amoblamientos/vanitory.jpg")}
+  style={{ cursor: "zoom-in" }}
+/>
+<img
+  src="/Esencia-amoblamientos/bajo-mesada-negro.jpg"
+  alt="Bajo mesada negro"
+  onClick={() => setImagenSeleccionada("/Esencia-amoblamientos/bajo-mesada-negro.jpg")}
+  style={{ cursor: "zoom-in" }}
+/>
+<img
+  src="/Esencia-amoblamientos/bajo-mesada-sahara.jpg"
+  alt="Bajo mesada Sahara"
+  onClick={() => setImagenSeleccionada("/Esencia-amoblamientos/bajo-mesada-sahara.jpg")}
+  style={{ cursor: "zoom-in" }}
+/>
 
 
   </div>
@@ -301,6 +346,92 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
 }
 
 } `}</style>
+            {imagenSeleccionada && (
+  <div
+    onClick={() => setImagenSeleccionada(null)}
+    style={{
+      position: "fixed",
+      inset: 0,
+      background: "rgba(0,0,0,0.96)",
+      zIndex: 9999,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: "25px"
+    }}
+  >
+    <button
+      onClick={() => setImagenSeleccionada(null)}
+      style={{
+        position: "absolute",
+        top: "20px",
+        right: "25px",
+        fontSize: "36px",
+        color: "white",
+        background: "none",
+        border: "none",
+        cursor: "pointer"
+      }}
+    >
+      ×
+    </button>
+
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        const i = imagenesGaleria.indexOf(imagenSeleccionada);
+        setImagenSeleccionada(
+          imagenesGaleria[
+            (i - 1 + imagenesGaleria.length) %
+            imagenesGaleria.length
+          ]
+        );
+      }}
+      style={{
+        fontSize: "42px",
+        color: "white",
+        background: "none",
+        border: "none",
+        cursor: "pointer"
+      }}
+    >
+      ‹
+    </button>
+
+    <img
+      src={imagenSeleccionada}
+      alt="Trabajo de Esencia Amoblamientos"
+      onClick={(e) => e.stopPropagation()}
+      style={{
+        maxWidth: "85%",
+        maxHeight: "85vh",
+        objectFit: "contain",
+        borderRadius: "8px"
+      }}
+    />
+
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        const i = imagenesGaleria.indexOf(imagenSeleccionada);
+        setImagenSeleccionada(
+          imagenesGaleria[
+            (i + 1) % imagenesGaleria.length
+          ]
+        );
+      }}
+      style={{
+        fontSize: "42px",
+        color: "white",
+        background: "none",
+        border: "none",
+        cursor: "pointer"
+      }}
+    >
+      ›
+    </button>
+  </div>
+)}
     </main>
   );
 }
