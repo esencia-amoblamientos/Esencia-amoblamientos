@@ -16,7 +16,62 @@ const categorias = [
 
 export default function Home() {
 const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
-  const imagenesGaleria = [
+  
+const [carrito, setCarrito] = useState([]);
+const [cantidad, setCantidad] = useState(1);
+const [carritoAbierto, setCarritoAbierto] = useState(false);
+
+    
+const productoPlacard = {
+  id: "placard-blanco",
+  nombre: "Placard blanco",
+  precio: 350000,
+  stock: 3,
+};
+
+const agregarAlCarrito = () => {
+  setCarrito((actual) => {
+    const existente = actual.find(
+      (item) => item.id === productoPlacard.id
+    );
+
+    const unidadesActuales = existente
+      ? existente.cantidad
+      : 0;
+
+    if (unidadesActuales + cantidad > productoPlacard.stock) {
+      alert("No hay suficientes unidades disponibles.");
+      return actual;
+    }
+
+    if (existente) {
+      return actual.map((item) =>
+        item.id === productoPlacard.id
+          ? { ...item, cantidad: item.cantidad + cantidad }
+          : item
+      );
+    }
+
+    return [
+      ...actual,
+      { ...productoPlacard, cantidad },
+    ];
+  });
+
+  setCantidad(1);
+  setCarritoAbierto(true);
+};
+
+const totalUnidades = carrito.reduce(
+  (total, item) => total + item.cantidad,
+  0
+);
+
+const totalCompra = carrito.reduce(
+  (total, item) => total + item.precio * item.cantidad,
+  0
+);
+const imagenesGaleria = [
   "/Esencia-amoblamientos/despensero.jpg",
   "/Esencia-amoblamientos/placard-blanco.jpg",
   "/Esencia-amoblamientos/placard-interior.jpg",
