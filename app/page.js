@@ -290,16 +290,20 @@ footer a {
   height: auto;
   display: block;
 }
-        .hero {
-          min-height: 570px;
-          display: flex;
-          align-items: center;
-          padding: 70px 9%;
-          background:
-            linear-gradient(90deg, #080808 5%, #080808bb 65%, #08080855),
-            url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85")
-            center/cover;
-        }
+       .hero {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  padding: 70px 9%;
+  background:
+    linear-gradient(90deg, #080808 5%, #080808bb 65%, #08080855),
+    url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85")
+    center/cover;
+}
         .heroContenido { max-width: 600px; }
         .hero h1 {
   font-family: Georgia, serif;
