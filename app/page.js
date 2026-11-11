@@ -161,13 +161,13 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
           3 unidades disponibles
         </p>
 
-        <button
-          className="boton"
-          type="button"
-          disabled
-        >
-          COMPRAR ONLINE
-        </button>
+       <button
+  className="boton"
+  type="button"
+  onClick={agregarAlCarrito}
+>
+  COMPRAR ONLINE
+</button>
       </div>
     </article>
   </div>
