@@ -689,6 +689,78 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
     </button>
   </div>
 )}
-    </main>
+{carritoAbierto && (
+  <div className="carrito-panel">
+    <h2>Mi carrito</h2>
+
+    <button onClick={() => setCarritoAbierto(false)}>
+      ✕
+    </button>
+
+    {carrito.length === 0 ? (
+      <p>Tu carrito está vacío.</p>
+    ) : (
+      <>
+        {carrito.map((item) => (
+          <div key={item.id}>
+            <h3>{item.nombre}</h3>
+            <p>Precio: ${item.precio.toLocaleString("es-AR")}</p>
+
+            <button onClick={() =>
+              setCarrito(actual =>
+                actual.map(producto =>
+                  producto.id === item.id
+                    ? { ...producto, cantidad: Math.max(1, producto.cantidad - 1) }
+                    : producto
+                )
+              )
+            }>
+              −
+            </button>
+
+            {item.cantidad}
+
+            <button onClick={() =>
+              setCarrito(actual =>
+                actual.map(producto =>
+                  producto.id === item.id &&
+                  producto.cantidad < producto.stock
+                    ? { ...producto, cantidad: producto.cantidad + 1 }
+                    : producto
+                )
+              )
+            }>
+              +
+            </button>
+
+            <p>Subtotal: ${(item.precio * item.cantidad).toLocaleString("es-AR")}</p>
+          </div>
+        ))}
+
+        <h3>Total: ${totalCompra.toLocaleString("es-AR")}</h3>
+          <button
+  className="boton"
+  type="button"
+  onClick={() => {
+    const mensaje =
+      "Hola Esencia👋🏻. Quiero realizar este pedido:\n\n" +
+      carrito.map(item =>
+        `${item.nombre} - Cantidad: ${item.cantidad} - Subtotal: $${(item.precio * item.cantidad).toLocaleString("es-AR")}`
+      ).join("\n") +
+      `\n\nTotal: $${totalCompra.toLocaleString("es-AR")}`;
+
+    window.open(
+      `${whatsapp.split("?")[0]}?text=${encodeURIComponent(mensaje)}`,
+      "_blank"
+    );
+  }}
+>
+  FINALIZAR COMPRA
+</button>
+      </>
+    )}
+  </div>
+)}
+  </main>
   );
 }
