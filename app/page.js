@@ -58,7 +58,7 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
             tus espacios en lugares únicos.
           </p>
           <a className="boton" href="#tienda">
-            DESCUBRIR COLECCIÓN
+            NUESTROS PRODUCTOS
           </a>
         </div>
       </section>
