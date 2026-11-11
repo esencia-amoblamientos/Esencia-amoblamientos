@@ -301,7 +301,7 @@ footer a {
   padding: 70px 9%;
   background:
     linear-gradient(90deg, #080808 5%, #080808bb 65%, #08080855),
-    url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85")
+    url("/Esencia-amoblamientos/portada-esencia.png")
     center/cover;
 }
         .heroContenido { max-width: 600px; }
