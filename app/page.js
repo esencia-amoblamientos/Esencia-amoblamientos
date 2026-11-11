@@ -20,7 +20,14 @@ const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
 const [carrito, setCarrito] = useState([]);
 const [cantidad, setCantidad] = useState(1);
 const [carritoAbierto, setCarritoAbierto] = useState(false);
-
+  const [formularioCompraAbierto, setFormularioCompraAbierto] = useState(false);
+const [datosCliente, setDatosCliente] = useState({
+  nombre: "",
+  dni: "",
+  telefono: "",
+  email: "",
+  entrega: "",
+});
     
 const productoPlacard = {
   id: "placard-blanco",
@@ -762,25 +769,102 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
           <button
   className="boton"
   type="button"
-  onClick={() => {
-    const mensaje =
-      "Hola Esencia👋🏻. Quiero realizar este pedido:\n\n" +
-      carrito.map(item =>
-        `${item.nombre} - Cantidad: ${item.cantidad} - Subtotal: $${(item.precio * item.cantidad).toLocaleString("es-AR")}`
-      ).join("\n") +
-      `\n\nTotal: $${totalCompra.toLocaleString("es-AR")}`;
-
-    window.open(
-      `${whatsapp.split("?")[0]}?text=${encodeURIComponent(mensaje)}`,
-      "_blank"
-    );
-  }}
+ onClick={() => {
+  setCarritoAbierto(false);
+  setFormularioCompraAbierto(true);
+}}
 >
   FINALIZAR COMPRA
 </button>
       </>
     )}
   </div>
+)}
+  {formularioCompraAbierto && (
+  <section className="formulario-compra">
+    <h2>Finalizar compra</h2>
+    <p>Completá tus datos para continuar con tu pedido.</p>
+
+    <form onSubmit={(e) => {
+      e.preventDefault();
+      alert("Tus datos fueron completados. Próximamente continuaremos con el pago mediante Getnet.");
+    }}>
+      <label>Nombre y apellido *</label>
+      <input
+        type="text"
+        required
+        value={datosCliente.nombre}
+        onChange={(e) => setDatosCliente({...datosCliente, nombre: e.target.value})}
+        placeholder="Nombre completo"
+      />
+
+      <label>DNI *</label>
+      <input
+        type="text"
+        required
+        value={datosCliente.dni}
+        onChange={(e) => setDatosCliente({...datosCliente, dni: e.target.value})}
+        placeholder="Número de DNI"
+      />
+
+      <label>Teléfono *</label>
+      <input
+        type="tel"
+        required
+        value={datosCliente.telefono}
+        onChange={(e) => setDatosCliente({...datosCliente, telefono: e.target.value})}
+        placeholder="Tu teléfono"
+      />
+
+      <label>Correo electrónico *</label>
+      <input
+        type="email"
+        required
+        value={datosCliente.email}
+        onChange={(e) => setDatosCliente({...datosCliente, email: e.target.value})}
+        placeholder="Tu correo electrónico"
+      />
+
+      <h3>¿Cómo querés recibir tu compra?</h3>
+
+      <label>
+        <input
+          type="radio"
+          name="entrega"
+          value="Envío a domicilio"
+          required
+          checked={datosCliente.entrega === "Envío a domicilio"}
+          onChange={(e) => setDatosCliente({...datosCliente, entrega: e.target.value})}
+        />
+        Envío a domicilio (a coordinar por WhatsApp)
+      </label>
+
+      <label>
+        <input
+          type="radio"
+          name="entrega"
+          value="Retiro en depósito"
+          checked={datosCliente.entrega === "Retiro en depósito"}
+          onChange={(e) => setDatosCliente({...datosCliente, entrega: e.target.value})}
+        />
+        Retiro en depósito
+      </label>
+
+      <h3>Total de tu compra: ${totalCompra.toLocaleString("es-AR")}</h3>
+
+      <button type="submit" className="boton">
+        CONTINUAR AL PAGO
+      </button>
+
+      <button
+        type="button"
+        className="boton"
+        onClick={() => setFormularioCompraAbierto(false)}
+      >
+        VOLVER
+      </button>
+    </form>
+  </section>
 )}
   </main>
   );
