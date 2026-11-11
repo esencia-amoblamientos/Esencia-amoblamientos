@@ -46,7 +46,7 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
       <section className="hero">
     <div className="heroLogo">
   <img
-    src="/logo_esencia_transparente.png"
+    src="/Esencia-amoblamientos/logo_esencia_transparente.png"
     alt="Esencia Amoblamientos"
   />
 </div>
