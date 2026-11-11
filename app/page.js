@@ -796,7 +796,15 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
     <h2>Finalizar compra</h2>
     <p>Completá tus datos para continuar con tu pedido.</p>
 
-    <form onSubmit={(e) => {
+    <form
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    gap: "14px",
+    maxWidth: "560px",
+    width: "100%",
+  }}
+  onSubmit={(e) => {
       e.preventDefault();
       alert("Tus datos fueron completados. Próximamente continuaremos con el pago mediante Getnet.");
     }}>
