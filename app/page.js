@@ -933,6 +933,12 @@ setPantallaPagoAbierta(true);
       padding: "40px 20px",
       textAlign: "center",
       minHeight: "300px",
+      position: "fixed",
+inset: 0,
+zIndex: 99999,
+width: "100vw",
+height: "100vh",
+overflowY: "auto",
     }}
   >
     <h2>Elegí cómo pagar</h2>
