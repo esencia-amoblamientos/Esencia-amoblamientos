@@ -391,6 +391,61 @@ footer a {
           color: #ddd;
         }
         .tienda { background: #191919; }
+        
+.productos {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 650px;
+}
+
+.producto {
+  width: 100%;
+  overflow: hidden;
+  background: #242424;
+  border: 1px solid #777;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px #0008;
+}
+
+.producto img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.producto-info {
+  padding: 28px;
+  text-align: left;
+}
+
+.producto-info h3 {
+  color: #ddd;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.producto-precio {
+  color: #e5e5e5 !important;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.producto-info p {
+  margin: 10px 0;
+}
+
+.stock {
+  color: #c8c8c8;
+  font-weight: bold;
+  margin-top: 20px !important;
+}
+
+.producto-info .boton {
+  margin-top: 20px;
+}
+
         .tienda p, .trabajos p, .personalizados p {
           color: #bbb;
           line-height: 1.8;
