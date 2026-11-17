@@ -744,6 +744,33 @@ box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
           header { justify-content: center; }
           nav { justify-content: center; }
           .hero { min-height: 500px; }
+            .section {
+    padding: 55px 6%;
+  }
+
+  .categorias {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .categoria {
+    padding: 16px 8px;
+    font-size: 14px;
+  }
+
+  .heroLogo {
+    width: 55%;
+    max-width: 260px;
+  }
+
+  .heroContenido {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 9vw, 42px);
+  }
         }
      .horarios {
   margin: 35px auto;
