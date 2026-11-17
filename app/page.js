@@ -416,7 +416,15 @@ backgroundPosition: "center",
 </section>
 
 
-      <footer id="contacto">
+      <footer
+  id="contacto"
+  style={{
+    backgroundImage: "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)), url('/Esencia-amoblamientos/fondo-contacto.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }}
+>
         <h2>ESENCIA AMOBLAMIENTOS</h2>
         <p>Diseñamos espacios que reflejan tu esencia.</p>
             <div className="horarios">
