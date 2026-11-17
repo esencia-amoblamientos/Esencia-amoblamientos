@@ -102,6 +102,7 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
   <nav>
     <a href="#">Inicio</a>
     <a href="#categorias">Productos</a>
+    <a href="#tu-idea">TU IDEA</a>
     <a href="#tienda">Tienda</a>
     <a href="#trabajos">Nuestros trabajos</a>
     <a href="#nosotros">Nosotros</a>
