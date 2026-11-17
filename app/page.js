@@ -345,16 +345,53 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
   </div>
 </section>
 
-      <section className="personalizados">
-        <h2>¿Tenés una idea?</h2>
-        <p>
-          Diseñamos y fabricamos muebles a medida,
-          adaptados a tus necesidades y presupuesto.
-        </p>
-        <a className="boton" href={whatsapp} target="_blank">
-          PEDIR PRESUPUESTO
-        </a>
-      </section>
+      
+<section
+  className="personalizados"
+  style={{
+    background: "linear-gradient(135deg, #111111, #292929, #101010)",
+    padding: "90px 20px",
+    textAlign: "center",
+    borderTop: "1px solid #777777",
+    borderBottom: "1px solid #777777",
+    position: "relative",
+    overflow: "hidden"
+  }}
+>
+  <p style={{
+    color: "#c0c0c0",
+    letterSpacing: "4px",
+    fontSize: "12px",
+    marginBottom: "18px"
+  }}>
+    HACEMOS REALIDAD TUS IDEAS
+  </p>
+
+  <h2 style={{
+    color: "#eeeeee",
+    fontSize: "clamp(30px, 4vw, 46px)",
+    fontWeight: 500,
+    marginBottom: "22px",
+    textShadow: "0 2px 15px rgba(255,255,255,0.15)"
+  }}>
+    ¿Tenés una idea?
+  </h2>
+
+  <p style={{
+    color: "#d0d0d0",
+    fontSize: "16px",
+    lineHeight: 1.8,
+    marginBottom: "30px"
+  }}>
+    Diseñamos y fabricamos muebles a medida,
+    adaptados a tus necesidades y presupuesto.
+  </p>
+
+  <a className="boton" href={whatsapp} target="_blank">
+    PEDIR PRESUPUESTO
+  </a>
+</section>
+
 
       <footer id="contacto">
         <h2>ESENCIA AMOBLAMIENTOS</h2>
