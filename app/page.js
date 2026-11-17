@@ -143,19 +143,11 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
     backgroundRepeat: "no-repeat",
     color: "#ffffff",
     textAlign: "center",
-    padding: "85px 8%"
+    padding: "85px 8% 85px 22%"
   }}
 >
   <p className="detalle">SOBRE ESENCIA</p>
-  <h2 style={{
-  fontSize: "clamp(30px, 4vw, 46px)",
-  fontWeight: 600,
-  lineHeight: 1.2,
-  margin: "22px 0 32px",
-  textShadow: "0 2px 12px rgba(0,0,0,0.5)"
-}}>
-  Diseñamos espacios que reflejan tu esencia.
-</h2>
+
 
   <p style={{
   fontSize: "clamp(15px, 1.2vw, 18px)",
