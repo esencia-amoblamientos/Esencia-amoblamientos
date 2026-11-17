@@ -349,7 +349,7 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
 <section
   className="personalizados"
   style={{
-    backgroundImage: "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('/fondo-idea.png')",
+    backgroundImage: "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('/Esencia-amoblamientos/fondo-idea.png')",
 backgroundSize: "cover",
 backgroundPosition: "center",
     padding: "90px 20px",
