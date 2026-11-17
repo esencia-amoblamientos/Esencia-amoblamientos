@@ -205,12 +205,35 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
 
       <section id="categorias" className="seccion">
         <p className="detalle">NUESTRAS PROPUESTAS</p>
-        <h2>Categorías</h2>
+        <h2 style={{
+  fontSize: "clamp(28px, 3vw, 38px)",
+  fontWeight: 500,
+  letterSpacing: "2px",
+  color: "#e5e5e5",
+  margin: "20px 0 38px",
+  textShadow: "0 2px 10px rgba(255,255,255,0.12)"
+}}>
+  Categorías
+</h2>
         <div className="categorias">
           {categorias.map((categoria) => (
-            <div className="categoria" key={categoria}>
-              {categoria}
-            </div>
+      <div
+  className="categoria"
+  key={categoria}
+  style={{
+    background: "linear-gradient(145deg, #222222, #101010)",
+    border: "1px solid #777777",
+    color: "#eeeeee",
+    padding: "24px 18px",
+    borderRadius: "4px",
+    boxShadow: "0 5px 18px rgba(0,0,0,0.4)",
+    transition: "all 0.3s ease",
+    letterSpacing: "0.5px",
+    fontWeight: 500
+  }}
+>
+  {categoria}
+</div>
           ))}
         </div>
       </section>
