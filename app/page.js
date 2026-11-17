@@ -241,7 +241,16 @@ style={{
       </section>
 
 
-<section id="tienda" className="seccion tienda">
+<section
+  id="tienda"
+  className="seccion tienda"
+  style={{
+    backgroundImage: "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/Esencia-amoblamientos/fondo-categorias.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }}
+>
   <p className="detalle">ESENCIA AMOBLAMIENTOS</p>
   <h2>Nuestros productos</h2>
   <p>
