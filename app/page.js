@@ -365,9 +365,26 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
   <p><strong>Sábados:</strong> 09:00 a 13:00 hs</p>
   <p><strong>Domingos:</strong> Cerrado</p>
 </div>
-        <p>WhatsApp: +54 9 351 6758271</p>
+        <p style={{display:"flex", justifyContent:"center", alignItems:"center", gap:"8px"}}>
+  <a href={whatsapp} target="_blank" rel="noreferrer" style={{color:"white", textDecoration:"none", display:"flex", alignItems:"center", gap:"8px"}}>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="10" fill="#25D366"/>
+      <path d="M7.5 18.5L8.3 15.8C6.5 12.9 8.6 8.1 12.1 8.1C14.8 8.1 17 10.3 17 13C17 16.5 13.1 18.5 10.4 16.8L7.5 18.5Z" fill="white"/>
+    </svg>
+    WhatsApp: +54 9 351 6758271
+  </a>
+</p>
         <a href={whatsapp}>Contactanos</a>
-        <p>Instagram: @esencia_amoblamientos1</p>
+        <p style={{display:"flex", justifyContent:"center", alignItems:"center", gap:"8px"}}>
+  <a href="https://www.instagram.com/esencia_amoblamientos1/" target="_blank" rel="noreferrer" style={{color:"white", textDecoration:"none", display:"flex", alignItems:"center", gap:"8px"}}>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D9468D" strokeWidth="2">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1" fill="#D9468D"/>
+    </svg>
+    Instagram: @esencia_amoblamientos1
+  </a>
+</p>
         <a
           href="https://www.instagram.com/esencia_amoblamientos1/"
           target="_blank"
