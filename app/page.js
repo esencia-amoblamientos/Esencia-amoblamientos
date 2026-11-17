@@ -390,7 +390,7 @@ backgroundPosition: "center",
     HACEMOS REALIDAD TUS IDEAS
   </p>
 
-  <h2 style={{
+  <h2 id="tu-idea" style={{
     color: "#eeeeee",
     fontSize: "clamp(30px, 4vw, 46px)",
     fontWeight: 500,
