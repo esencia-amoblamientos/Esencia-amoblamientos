@@ -203,7 +203,16 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
 </section>
 
 
-      <section id="categorias" className="seccion">
+      <section
+  id="categorias"
+  className="seccion"
+  style={{
+    backgroundImage: "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/Esencia-amoblamientos/fondo-categorias.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }}
+>
         <p className="detalle">NUESTRAS PROPUESTAS</p>
         <h2 style={{
   fontSize: "clamp(28px, 3vw, 38px)",
