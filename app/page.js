@@ -312,7 +312,16 @@ style={{
 </section>
 
 
-      <section id="trabajos" className="seccion trabajos">
+     <section
+  id="trabajos"
+  className="seccion trabajos"
+  style={{
+    backgroundImage: "linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url('/Esencia-amoblamientos/fondo-trabajos-esencia.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }}
+>
   <p className="detalle">ESENCIA AMOBLAMIENTOS</p>
   <h2>Nuestros trabajos</h2>
   <p>Diseños exclusivos, fabricados a medida para transformar cada espacio.</p>
