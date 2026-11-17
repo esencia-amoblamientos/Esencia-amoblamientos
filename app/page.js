@@ -146,22 +146,58 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
   }}
 >
   <p className="detalle">SOBRE ESENCIA</p>
-  <h2>Diseñamos espacios que reflejan tu esencia.</h2>
+  <h2 style={{
+  fontSize: "clamp(30px, 4vw, 46px)",
+  fontWeight: 600,
+  lineHeight: 1.2,
+  margin: "22px 0 32px",
+  textShadow: "0 2px 12px rgba(0,0,0,0.5)"
+}}>
+  Diseñamos espacios que reflejan tu esencia.
+</h2>
 
-  <p>
+  <p style={{
+  fontSize: "clamp(15px, 1.2vw, 18px)",
+  lineHeight: 1.9,
+  fontWeight: 300,
+  margin: "0 auto 24px",
+  maxWidth: "1100px",
+  letterSpacing: "0.3px"
+}}>
     En Esencia Amoblamientos creemos que cada hogar tiene una identidad propia.
     Por eso fabricamos muebles a medida, cuidando cada detalle y combinando diseño, funcionalidad y calidad.
   </p>
 
-  <p>
+  <p style={{
+  fontSize: "clamp(15px, 1.2vw, 18px)",
+  lineHeight: 1.9,
+  fontWeight: 300,
+  margin: "0 auto 24px",
+  maxWidth: "1100px",
+  letterSpacing: "0.3px"
+}}>
     Nuestro objetivo es transformar tus ideas en muebles únicos, adaptados a tus espacios, gustos y posibilidades.
   </p>
 
-  <p>
+  <p style={{
+  fontSize: "clamp(15px, 1.2vw, 18px)",
+  lineHeight: 1.9,
+  fontWeight: 300,
+  margin: "0 auto 24px",
+  maxWidth: "1100px",
+  letterSpacing: "0.3px"
+}}>
     Contamos con personal capacitado y con más de 10 años de experiencia en el rubro, trabajando con dedicación y compromiso para ofrecer soluciones que se adapten a cada necesidad.
   </p>
 
-  <p>
+  <p style={{
+  fontSize: "clamp(15px, 1.2vw, 18px)",
+  lineHeight: 1.9,
+  fontWeight: 300,
+  margin: "0 auto 24px",
+  maxWidth: "1100px",
+  letterSpacing: "0.3px"
+}}>
     Cada proyecto comienza con una idea. Nosotros la hacemos realidad.
   </p>
 </section>
