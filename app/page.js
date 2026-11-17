@@ -220,17 +220,19 @@ const whatsapp = "https://wa.me/5493516758271?text=Hola%20Esencia%F0%9F%91%8B%F0
       <div
   className="categoria"
   key={categoria}
-  style={{
-    background: "linear-gradient(145deg, #222222, #101010)",
-    border: "1px solid #777777",
-    color: "#eeeeee",
-    padding: "24px 18px",
-    borderRadius: "4px",
-    boxShadow: "0 5px 18px rgba(0,0,0,0.4)",
-    transition: "all 0.3s ease",
-    letterSpacing: "0.5px",
-    fontWeight: 500
-  }}
+  
+style={{
+  background: "linear-gradient(135deg, #f5f5f5 0%, #c9c9c9 50%, #eeeeee 100%)",
+  border: "1px solid #dddddd",
+  color: "#111111",
+  padding: "24px 18px",
+  borderRadius: "4px",
+  boxShadow: "0 5px 18px rgba(0,0,0,0.18)",
+  transition: "all 0.3s ease",
+  letterSpacing: "0.5px",
+  fontWeight: 600
+}}
+
 >
   {categoria}
 </div>
